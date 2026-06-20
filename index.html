@@ -374,9 +374,26 @@
           </div>
 
           <div class="field">
-            <label>D.O.J <span class="req">*</span></label>
-            <input type="date" name="doj" required>
-          </div>
+    <label>D.O.J <span class="req">*</span></label>
+    <input type="date" id="doj" name="doj" required>
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const doj = document.getElementById("doj");
+
+    const today = new Date();
+
+    // Current month ki 23 tareekh
+    const maxDate = new Date(today.getFullYear(), today.getMonth(), 23);
+
+    // Previous month ki 24 tareekh
+    const minDate = new Date(today.getFullYear(), today.getMonth() - 1, 24);
+
+    doj.min = minDate.toISOString().split('T')[0];
+    doj.max = maxDate.toISOString().split('T')[0];
+});
+</script>
           <div class="field">
             <label>Blood Group</label>
             <select name="bloodGroup">

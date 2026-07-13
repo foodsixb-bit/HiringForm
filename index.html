@@ -518,45 +518,41 @@ document.addEventListener("DOMContentLoaded", function () {
             <input type="number" name="basicPay" required min="0" step="1" placeholder="e.g. 45000">
           </div>
           <div class="field">
-		        <label>Daily Allowance <span class="req">*</span></label>
+		        <label>Daily Allowance </label>
                 <input type="text" name="dailyAllowance" placeholder="e.g.300">
               </div>
               <div class="field">
-              <label>Fuel per Day <span class="req">*</span></label>
+              <label>Fuel per Day </label>
                 <input type="text" name="fuelperDay" placeholder="e.g. 1.5 Litre">
               </div>
               <div class="field">
-              <label>Mobile Allowance <span class="req">*</span></label>
+              <label>Mobile Allowance </label>
                 <input type="text" name="mobileAllowance" placeholder="e.g. 1500">
               </div>
               <div class="field">
-              <label>Travelling Allowance <span class="req">*</span></label>
+              <label>Travelling Allowance </label>
                 <input type="text" name="travellingAllowance" placeholder="e.g. 7/km">
               </div>
               <div class="field">
-              <label>Vehicle Maintenance <span class="req">*</span></label>
+              <label>Vehicle Maintenance </label>
                 <input type="text" name="vehicleMaintenance" placeholder="e.g. 6000">
               </div>
         </div>
       </div>
 
       <!-- SECTION: APPROVAL -->
-      <div class="section">
-        <div class="section-title"><span class="num">2</span>Manager Approval</div>
-        <div class="grid">
-          <div class="field">
-            <label>Select Approving Manager <span class="req">*</span></label>
-            <select name="managerName" id="managerName" required>
-              <option value="">Select Manager</option>
-              <option>ZSM</option>
-              <option>ASM</option>
-              <option>RSM</option>
-              <option>RSH</option>
-            </select>
+         <label>Select Approving Manager</label>
+         <select name="managerName" id="managerName">
+           <option value="">Select Manager</option>
+           <option>ZSM</option>
+           <option>ASM</option>
+           <option>RSM</option>
+           <option>RSH</option>
+        </select>
             <span class="hint">An approval email with Approve / Reject buttons will be sent to this manager.</span>
           </div>
           <div class="field">
-            <label>Submitted By (Name) <span class="req">*</span></label>
+            <label>Submitted By (Name) </label>
             <input type="text" name="submittedBy" required>
           </div>
         </div>

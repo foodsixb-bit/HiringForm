@@ -387,8 +387,8 @@ document.addEventListener("DOMContentLoaded", function () {
     // Current month ki 25 tareekh
     const maxDate = new Date(today.getFullYear(), today.getMonth(), 25);
 
-    // Previous month ki 26 tareekh
-    const minDate = new Date(today.getFullYear(), today.getMonth() - 1, 26);
+    // Previous month ki 25 tareekh
+    const minDate = new Date(today.getFullYear(), today.getMonth() - 1, 25);
 
     doj.min = minDate.toISOString().split('T')[0];
     doj.max = maxDate.toISOString().split('T')[0];
